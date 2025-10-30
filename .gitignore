@@ -1,0 +1,66 @@
+# Node dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directories
+coverage/
+.nyc_output/
+
+# Build output
+dist/
+build/
+out/
+
+# dotenv environment files (exclude any file that contains secrets)
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Optional npm cache
+.npm/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# SSL keys / credentials
+*.pem
+*.key
+*.crt
+
+# Misc
+coverage/
+.history/
+
+# If you have uploads or runtime user data directories, ignore them
+uploads/
+public/uploads/
+
+# Mac/Windows swap and lock files
+~$*
+*.swp

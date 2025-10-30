@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiveTalk Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+    <!-- Name input form -->
+    <div class="name-form">
+      <h2>Enter your name</h2>
+      <form id="nameForm">
+        <input type="text" id="nameInput" placeholder="Your name..." required />
+        <button type="submit">Start Chat</button>
+      </form>
+    </div>
+
+    <!-- Chat container (hidden initially) -->
+    <div class="chat-container" style="display: none;">
+      <div class="chat-header">
+        💬 LiveTalk Chat
+      </div>
+
+      <div id="chat-box" class="chat-box"></div>
+
+      <form id="messageForm" class="input-area">
+        <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
