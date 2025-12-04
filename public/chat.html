@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  
+  <!-- Responsive layout -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Basic description -->
+  <meta name="description" content="LiveTalk - Real-Time Chat Application using Socket.IO" />
+
   <title>LiveTalk | Chat</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- App Icon (Optional) -->
+  <link rel="icon" href="chat-icon.png" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <nav>
+  <!-- Top Navbar -->
+  <nav class="chat-nav">
     <h2>💬 LiveTalk</h2>
   </nav>
 
-  <div class="chat-container">
+  <!-- Main Chat Layout -->
+  <main class="chat-container">
+
+    <!-- Messages Box -->
     <div class="messages" id="messages"></div>
+
+    <!-- Typing Indicator -->
+    <p id="typingStatus" class="typing-status"></p>
+
+    <!-- Input Area -->
     <div class="input-area">
-      <input id="msgInput" type="text" placeholder="Type a message..." autocomplete="off" />
+      <input 
+        id="msgInput" 
+        type="text" 
+        placeholder="Type a message..." 
+        autocomplete="off"
+      />
       <button id="sendBtn">Send</button>
     </div>
-  </div>
+  </main>
 
+  <!-- Sockets -->
   <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Client Logic -->
   <script src="script.js"></script>
 </body>
 </html>
