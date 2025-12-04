@@ -1,5 +1,13 @@
-# Node dependencies
+# ==========================
+# Node.js / JavaScript Project
+# ==========================
+
+# Node modules
 node_modules/
+
+# Environment Variables (secrets)
+.env
+.env.*
 
 # Logs
 logs/
@@ -9,58 +17,58 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Runtime data
+# Cache & Temporary Files
+.cache/
+tmp/
+temp/
+npm-cache/
+.npm/
+
+# PIDs
 pids/
 *.pid
 *.seed
 *.pid.lock
 
-# Coverage directories
-coverage/
-.nyc_output/
-
-# Build output
+# Build / Output Directories
 dist/
 build/
 out/
 
-# dotenv environment files (exclude any file that contains secrets)
-.env
-.env.*
+# Test Coverage
+coverage/
+.nyc_output/
 
-# Editor directories and files
+# IDE & Editor Config
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
-# OS files
+# OS System Files
 .DS_Store
 Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# Optional npm cache
-.npm/
-
-# Temporary files
-tmp/
-temp/
-.cache/
-
-# SSL keys / credentials
+# SSL Certificates
 *.pem
 *.key
 *.crt
 
-# Misc
-coverage/
-.history/
-
-# If you have uploads or runtime user data directories, ignore them
+# Runtime Uploaded Files (optional)
 uploads/
 public/uploads/
 
-# Mac/Windows swap and lock files
+# Misc
+.history/
+
+# Lock / Swap Files
 ~$*
 *.swp
+
+# Local database or logs (optional)
+*.db
+*.sqlite
+data/
+backup/
