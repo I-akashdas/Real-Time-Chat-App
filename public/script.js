@@ -9,7 +9,7 @@ const chatBox = document.getElementById("chat-box");
 
 let myName = "";
 
-// Handle name form submit
+
 nameForm.addEventListener("submit", (e) => {
   e.preventDefault();
   myName = nameInput.value.trim();
@@ -22,7 +22,6 @@ nameForm.addEventListener("submit", (e) => {
   }
 });
 
-// Send message
 messageForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const message = messageInput.value.trim();
@@ -33,17 +32,17 @@ messageForm.addEventListener("submit", (e) => {
   messageInput.value = "";
 });
 
-// Receive message
+
 socket.on("receive-message", (data) => {
   appendMessage(`${data.username}: ${data.message}`, "received");
 });
 
-// New user joined
+
 socket.on("user-joined", (name) => {
   appendMessage(`${name} joined the chat`, "system");
 });
 
-// Helper function
+
 function appendMessage(message, type) {
   const div = document.createElement("div");
   div.classList.add("message", type);
